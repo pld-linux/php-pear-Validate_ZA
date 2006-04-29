@@ -4,11 +4,12 @@
 %define		_status		alpha
 %define		_pearname	Validate_ZA
 
-Summary:	%{_pearname} - Validation class for ZA
+Summary:	%{_pearname} - Validation class for South Africa
 Summary(pl):	%{_pearname} - Klasa do sprawdzania poprawno¶ci dla RPA
 Name:		php-pear-%{_pearname}
 Version:	0.2.1
 Release:	1
+Epoch:		0
 License:	New BSD
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -16,15 +17,15 @@ Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 URL:		http://pear.php.net/package/Validate_ZA/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
-Requires:	php-pear
 Requires:	php-common >= 3:4.2.0
+Requires:	php-pear
 Requires:	php-pear-Validate >= 0.5.0
 Requires:	php-pear-Validate_Finance_CreditCard >= 0.5.0
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Package containes locale validation for ZA such as:
+Package containes locale validation for South Africa such as:
 - Postal Code
 - Region (province)
 - SSN
@@ -32,8 +33,8 @@ Package containes locale validation for ZA such as:
 In PEAR status of this package is: %{_status}.
 
 %description -l pl
-Pakiet do sprawdzania poprawno¶ci danych dla Republiki Po³udniowej
-Afryki:
+Pakiet do sprawdzania poprawno¶ci dla Republiki Po³udniowej Afryki
+danych takich jak:
 - kod pocztowy
 - region (prowincja)
 - numer ubezpieczenia spo³ecznego (SSN)
@@ -69,8 +70,9 @@ rm -rf $RPM_BUILD_ROOT
 %doc install.log
 %{php_pear_dir}/.registry/*.reg
 %{php_pear_dir}/Validate/ZA.php
+%dir %{php_pear_dir}/data/Validate_ZA
 %{php_pear_dir}/data/Validate_ZA/ZA_postcodes.txt
 
 %files tests
 %defattr(644,root,root,755)
-%{php_pear_dir}/tests/Validate_ZA/tests/validate_ZA.phpt
+%{php_pear_dir}/tests/Validate_ZA
