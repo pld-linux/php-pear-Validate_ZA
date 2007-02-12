@@ -5,7 +5,7 @@
 %define		_pearname	Validate_ZA
 
 Summary:	%{_pearname} - Validation class for South Africa
-Summary(pl):	%{_pearname} - Klasa do sprawdzania poprawno∂ci dla RPA
+Summary(pl.UTF-8):   %{_pearname} - Klasa do sprawdzania poprawno≈õci dla RPA
 Name:		php-pear-%{_pearname}
 Version:	0.2.1
 Release:	1
@@ -33,18 +33,18 @@ Package containes locale validation for South Africa such as:
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-Pakiet do sprawdzania poprawno∂ci dla Republiki Po≥udniowej Afryki
+%description -l pl.UTF-8
+Pakiet do sprawdzania poprawno≈õci dla Republiki Po≈Çudniowej Afryki
 danych takich jak:
 - kod pocztowy
 - region (prowincja)
-- numer ubezpieczenia spo≥ecznego (SSN)
+- numer ubezpieczenia spo≈Çecznego (SSN)
 
 Ta klasa ma w PEAR status: %{_status}.
 
 %package tests
 Summary:	Tests for PEAR::%{_pearname}
-Summary(pl):	Testy dla PEAR::%{_pearname}
+Summary(pl.UTF-8):   Testy dla PEAR::%{_pearname}
 Group:		Development
 Requires:	%{name} = %{epoch}:%{version}-%{release}
 AutoReq:	no
@@ -52,7 +52,7 @@ AutoReq:	no
 %description tests
 Tests for PEAR::%{_pearname}.
 
-%description tests -l pl
+%description tests -l pl.UTF-8
 Testy dla PEAR::%{_pearname}.
 
 %prep
