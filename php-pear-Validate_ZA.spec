@@ -5,7 +5,7 @@ Summary:	%{_pearname} - Validation class for South Africa
 Summary(pl.UTF-8):	%{_pearname} - Klasa do sprawdzania poprawności dla RPA
 Name:		php-pear-%{_pearname}
 Version:	0.2.2
-Release:	3
+Release:	4
 License:	New BSD
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -14,7 +14,7 @@ URL:		http://pear.php.net/package/Validate_ZA/
 BuildRequires:	php-pear-PEAR >= 1:1.6.0
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
-Requires:	php-common >= 3:4.2.0
+Requires:	php(core) >= 4.2.0
 Requires:	php-pear
 Requires:	php-pear-Validate >= 0.5.0
 Requires:	php-pear-Validate_Finance_CreditCard >= 0.5.0
